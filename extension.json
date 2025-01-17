@@ -1,9 +1,10 @@
 {
-    "name": "Taskmanager",
-    "version": "0.0.1",
+    "name": "Sliver Taskmanager",
+    "package_name": "sliver-taskmanager",
+    "version": "0.0.0",
     "extension_author": "RafBishopFox",
     "original_author": "RafBishopFox",
-    "repo_url": "https://github.com/sliverarmory/Taskmanager",
+    "repo_url": "https://github.com/sliverarmory/sliver-taskmanager",
     "commands": [
         {
             "command_name": "taskmanager",
