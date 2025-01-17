@@ -59,7 +59,7 @@ jobs:
           PACKAGE_NAME=$(cat extension.json | jq -r .package_name)
           tar czvf ../packages/$PACKAGE_NAME.v1.6.tar.gz .
           cd ../packages
-          bash -c "echo \"\" | /home/runner/minisign -s /home/runner/minisign.key -S -m ./$PACKAGE_NAME.tar.gz -t \"$MANIFEST\" -x $PACKAGE_NAME.v1.6.minisig"
+          bash -c "echo \"\" | /home/runner/minisign -s /home/runner/minisign.key -S -m ./$PACKAGE_NAME.v1.6.tar.gz -t \"$MANIFEST\" -x $PACKAGE_NAME.v1.6.minisig"
 
       - name: "Publish Release"
         uses: "marvinpinto/action-automatic-releases@latest"
